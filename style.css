@@ -67,7 +67,7 @@ h1 span {
 
 .text-container p {
     color: var(--Very-Dark-Blue);
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 1rem;
 }
 
@@ -106,11 +106,24 @@ form {
     margin: 1rem 0rem;
 }
 
+.form-container {
+    max-width: 33rem;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
 #email {
     border-radius: 50px;
-    border-color: var(--Pale-Blue);
+    border-color: var(--Gray);
+    opacity: 0.5;
     padding: 1rem;
-    width: 20rem;
+    width: 18rem;
+}
+
+#email::placeholder {
+    color: var(--Gray);
+    opacity: .5;
 }
 
 button {
@@ -120,8 +133,9 @@ button {
     padding: 1rem 2rem;
     border-radius: 50px;
     border: none;
-    width: 12rem;
+    width: 10rem;
     margin-left: .5rem;
+    box-shadow: var(--Gray) 0px 3px 10px;
 }
 
 button:hover {
@@ -133,7 +147,8 @@ button:hover {
 /*Image */
 
 .main-image {
-    /* padding: 1rem 14rem; */
+    margin-top: 2rem;
+    width: 33rem;
 }
 
 
@@ -155,15 +170,27 @@ i {
     color: var(--Blue)
 }
 
+li:hover {
+    background-color: var(--Blue);
+}
+
+a:hover {
+    color: white;
+}
+
 
 /*Bottom of Page */
 
 .social-media-container {
     margin-top: 5rem;
+    position: absolute;
+    bottom: 5%;
 }
 
 .footer {
     display: flex;
+    position: absolute;
+    bottom: 3%;
 }
 
 .footer p {
@@ -176,6 +203,13 @@ i {
     }
     h1 {
         font-size: 1.5rem;
+    }
+    .main-image {
+        width: 95%;
+    }
+    .image-container {
+        width: 90%;
+        margin-top: 2.5rem;
     }
     form {
         display: flex;
