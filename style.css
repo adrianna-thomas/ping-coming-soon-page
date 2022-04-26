@@ -183,13 +183,13 @@ a:hover {
 
 .social-media-container {
     margin-top: 5rem;
-    position: absolute;
+    position: fixed;
     bottom: 5%;
 }
 
 .footer {
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 3%;
 }
 
